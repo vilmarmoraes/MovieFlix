@@ -10,22 +10,22 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tb_role")
-public class Role implements Serializable {
+@Table(name = "tb_genre")
+public class Genre implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String authority;
+	private String name;
 
-	public Role() {
+	public Genre() {
 	}
 
-	public Role(Long id, String authority) {
+	public Genre(Long id, String name) {
 		super();
 		this.id = id;
-		this.authority = authority;
+		this.name = name;
 	}
 
 	public Long getId() {
@@ -36,12 +36,12 @@ public class Role implements Serializable {
 		this.id = id;
 	}
 
-	public String getAuthority() {
-		return authority;
+	public String getName() {
+		return name;
 	}
 
-	public void setAuthority(String authority) {
-		this.authority = authority;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	@Override
@@ -57,7 +57,7 @@ public class Role implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Role other = (Role) obj;
+		Genre other = (Genre) obj;
 		return Objects.equals(id, other.id);
 	}
 

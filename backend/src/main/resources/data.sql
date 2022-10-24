@@ -7,3 +7,12 @@ INSERT INTO tb_role (authority) VALUES ('ROLE_MEMBER');
 INSERT INTO tb_user_role (user_id, role_id) VALUES (1, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 2);
+
+INSERT INTO tb_genre (name) VALUES ('ADVENTURE');
+INSERT INTO tb_genre (name) VALUES ('ACTION');
+INSERT INTO tb_genre (name) VALUES ('FICTION');
+INSERT INTO tb_genre (name) VALUES ('ROMANCE');
+INSERT INTO tb_genre (name) VALUES ('TRHILLER');
+INSERT INTO tb_genre (name) VALUES ('HORROR');
+INSERT INTO tb_genre (name) VALUES ('ANIME');
+INSERT INTO tb_genre (name) VALUES ('CHILD');
