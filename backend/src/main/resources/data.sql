@@ -16,3 +16,9 @@ INSERT INTO tb_genre (name) VALUES ('TRHILLER');
 INSERT INTO tb_genre (name) VALUES ('HORROR');
 INSERT INTO tb_genre (name) VALUES ('ANIME');
 INSERT INTO tb_genre (name) VALUES ('CHILD');
+
+
+INSERT INTO tb_movie (id, title, sub_Title, year, img_Url, synopsis, genre_id) VALUES (1, 'Adão Negro','Black Adam',2022, 'https://t.ctcdn.com.br/IvejBzSXuJmIoxnaIfNN7sjOBhk=/660x0/smart/i441805.jpeg', 'O poderoso Adão Negro é libertado de sua tumba para lançar sua justiça cruel sob a Terra.', 2);
+
+INSERT INTO tb_review (id, text, movie_id, user_id) VALUES (1, 'Filme muito bom', 1, 2);
+INSERT INTO tb_review (id, text, movie_id, user_id) VALUES (2, 'Tem muita ação', 1, 2);
