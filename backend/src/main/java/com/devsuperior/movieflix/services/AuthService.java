@@ -33,5 +33,10 @@ public class AuthService {
 		}
 	}
 	
-	
+	public void validateIfUserIsMember(Long userId) {
+		User user = authenticated();
+		if(!user.hasRole("ROLE_MEMBER")) {
+			throw new ForbiddenException("Access denied");
+		}
+	}
 }

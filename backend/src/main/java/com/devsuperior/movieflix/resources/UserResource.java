@@ -28,4 +28,18 @@ public class UserResource {
 		UserDTO dto = service.findCurrentUser();
 		return ResponseEntity.ok().body(dto);
 	}
+	
+	/*
+	 * 
+		@Autowired
+	private AuthService authService;
+	
+	@GetMapping(value = "/profile")
+	@ResponseStatus(code = HttpStatus.OK)
+	public UserDTO profile() {
+		User user = authService.authenticated();
+		return new UserDTO(user);
+	} 
+	 * 
+	 * */
 }
